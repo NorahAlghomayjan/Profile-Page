@@ -2,16 +2,14 @@
 
 /* styling top */
 
-.page { height: 600px; background-color: whitesmoke; display: flex; }
+.page { height: 600px; background-color: whitesmoke;}
 
 .top {
     background-color: black;
     display: flex;
     color: white;
     padding: 0px 50px 0px 50px;
-    align-items: center;
-    flex-grow: 1;
-}
+    align-items: center;}
 
 .title, #profile , #links , #sign-out, #sign-out button , #links a
 {margin: 5px 10px 5px 10px; color: white;}
@@ -35,9 +33,8 @@ a {text-decoration: none;}
 .bottom {
     display: flex;
     align-items: flex-start;
-    padding: 5px 50px 5px 50px;
-    flex-grow: 1;
-}
+    padding: 5px 50px 5px 50px;}
+    
 .profile , .education , .requests , .connections {margin-top: 20px;}
 
 .card-body , .edu-body , .req-body , .connect-body , .connect-tail {
