@@ -1,14 +1,17 @@
-* { font-family: 'Roboto', sans-serif; margin: 0px;}
+* { font-family: 'Roboto', sans-serif; margin: 0px; flex-wrap: wrap;}
 
 /* styling top */
 
-.page { height: 600px; background-color: whitesmoke;}
+.page { height: 600px; background-color: whitesmoke; display: flex; }
 
 .top {
     background-color: black;
     display: flex;
     color: white;
-    padding: 0px 50px 0px 50px;}
+    padding: 0px 50px 0px 50px;
+    align-items: center;
+    flex-grow: 1;
+}
 
 .title, #profile , #links , #sign-out, #sign-out button , #links a
 {margin: 5px 10px 5px 10px; color: white;}
@@ -33,6 +36,7 @@ a {text-decoration: none;}
     display: flex;
     align-items: flex-start;
     padding: 5px 50px 5px 50px;
+    flex-grow: 1;
 }
 .profile , .education , .requests , .connections {margin-top: 20px;}
 
@@ -48,7 +52,7 @@ a {text-decoration: none;}
 
 /* right-side */
 
-.right-side { margin-right: 5px; flex: 2; margin-top: 20px; }
+.right-side { margin-right: 5px; flex-grow: 2; margin-top: 20px; }
 
 .card-header img {border-radius: 50%;
     border: 1px solid gray;
@@ -66,10 +70,11 @@ a {text-decoration: none;}
 .card-body {padding-top: 50px;}
 
 .card-header * , .card-body * , .edu-body .row , .edu-header *  { margin: 7px 20px 2px 20px;}
+.card-body h4 , .card-body a {display: flex; align-items: center;}
 
 /* left-side */
 
-.left-side { margin-left: 5px; flex: 1; margin-top: 20px;}
+.left-side { margin-left: 5px; flex-grow: 1; margin-top: 20px;}
 
 .req-body , .connect-body , .connect-tail {padding: 5px;}
 
@@ -85,6 +90,9 @@ a {text-decoration: none;}
 
 .row img {border-radius: 50%; height: 30px; width: auto; border: none;}
 
-.req-body .row { display: flex; justify-content: space-between;}
+.req-body .row { display: flex; justify-content: space-between; align-items: center;}
 
-.icons {height: 20px; width: auto; border: none; margin-left: 0;}
+.req-body .row * ,.connect-body .row {display: flex; align-items: center; margin: 3px;}
+.connect-body .row  * {margin: 3px;}
+
+.icons {height: 20px; width: auto; border: none; margin: 0px 13px 0px 0px;}
