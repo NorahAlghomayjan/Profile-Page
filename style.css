@@ -2,7 +2,7 @@
 
 /* styling top */
 
-.page { height: 600px; background-color: whitesmoke;}
+.page { height: auto; background-color: whitesmoke;}
 
 .top {
     background-color: black;
@@ -34,7 +34,7 @@ a {text-decoration: none;}
     display: flex;
     align-items: flex-start;
     padding: 5px 50px 5px 50px;}
-    
+
 .profile , .education , .requests , .connections {margin-top: 20px;}
 
 .card-body , .edu-body , .req-body , .connect-body , .connect-tail {
