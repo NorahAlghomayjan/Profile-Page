@@ -2,7 +2,7 @@
 
 /* styling top */
 
-.page { height: auto; background-color: whitesmoke;}
+.page { height: auto; background-color: whitesmoke; display: flex; justify-content: center;}
 
 .top {
     background-color: black;
@@ -33,7 +33,9 @@ a {text-decoration: none;}
 .bottom {
     display: flex;
     align-items: flex-start;
-    padding: 5px 50px 5px 50px;}
+    padding: 5px 50px 5px 50px;
+    width: 1000px;
+}
 
 .profile , .education , .requests , .connections {margin-top: 20px;}
 
